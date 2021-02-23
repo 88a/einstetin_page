@@ -4299,6 +4299,133 @@ p {
   }
 }
 
+
+.english-teacher-card, .lesson-card {
+  padding: 0 49px 0 56px;
+  max-width: 50%;
+}
+
+.english-teachers-card {
+  padding: 0 49px 0 28px;
+
+}
+
+.english-teachers-name {
+  margin-bottom: 21px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
+.english-teachers {
+  display: flex;
+  border-bottom: 2px solid black;
+}
+
+.english-teacher-photo img {
+    max-width: 122px;
+}
+
+.english-teacher-video, .lesson-video {
+  width: 464px;
+}
+
+.english-teacher-name, .lesson-description {
+  margin-bottom: 41px;
+  font-size: 31px;
+  line-height: 1.2em;
+}
+
+.english-teacher, .lesson {
+  display: flex;
+  /*flex-direction: row;*/
+  /*width: 100%;*/
+  /*flex-wrap: nowrap;*/
+  justify-content: center;
+  align-items: center;
+}
+
+.enroll {
+  padding-top: 50px;
+}
+
+.blue-section {
+  background-color: #58cbf4;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+  padding-bottom: 18px;
+}
+
+.yellow-section {
+  background-color: #FBFCE8;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+}
+
+.blue-section-title, .yellow-section-title {
+  /*width: 252px;*/
+  /* flex-shrink: 0; */
+  font-size: 54px;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+}
+
+.enrol__phone {
+  padding: 0 34px;
+}
+
+.enrol-section {
+  padding-left: 24px;
+  background-color: #26387e;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: nowrap;
+  /*justify-content: flex-start;*/
+  /*align-items: flex-start;*/
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.enrol__phone  a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.25s ease;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+.enrol__email {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: normal;
+  /*margin-bottom: 24px;*/
+
+}
+
+.enrol__title1, .enrol__title {
+  font-size: 50px;
+  line-height: 53px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.enrol__title {
+  display: none;
+}
+
+
+
+
+
+
 .enroll {
   padding-top: 50px;
 }
@@ -4392,6 +4519,54 @@ p {
     display: none;
     content: unset;
   }
+
+  .english-teacher {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .english-teacher-card {
+    padding: 27px 47px 0 0px;
+    max-width: 76%;
+  }
+
+  .english-teachers-card {
+    /*padding-top: 30px;*/
+    /*padding-left: 0;*/
+
+    padding: 30px 49px 0 0;
+
+  }
+
+  .english-teachers {
+    margin-top: 32px;
+  }
+
+  .enrol-section {
+    flex-direction: column;
+  }
+
+  .enrol__title {
+    display: block;
+  }
+
+  .enrol__title1{
+    display: none;
+  }
+
+  .enrol__phone a {
+    font-size: 38px;
+  }
+  .enrol__phone {
+    padding: 0;
+  }
+
+  .enrol__email {
+
+    font-size: 30px;
+  }
+
 }
 
 .packages {
@@ -5131,5 +5306,79 @@ p {
   }
   .essay-table-wrapper table td:nth-child(2) {
     width: 70%;
+  }
+}
+
+.approach-english .english-teacher {
+  padding: 25px 0;
+}
+
+.approach-english .english-teacher:nth-child(2n+1) .english-teacher-card {
+  padding-right: 0;
+}
+
+.approach-english .english-teacher:nth-child(2n) .english-teacher-card {
+  padding-left: 0;
+}
+
+.lessons-container {
+  padding-bottom: 32px;
+}
+
+.lessons-container .lesson {
+  padding: 40px 0;
+}
+
+.lesson--reverse .lesson-video {
+  margin-left: auto;
+}
+
+.lesson {
+  justify-content: flex-start;
+}
+
+.lesson-card {
+  width: calc(100% - 464px);
+}
+
+@media screen and (max-width: 767px) {
+  .english-teacher-video, .lesson-video {
+    width: 100%;
+    max-width: 464px;
+  }
+
+  .lesson-card {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    margin-top: 41px;
+  }
+
+  .lesson--reverse .lesson-card {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .lesson {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .english-teachers {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 40px;
+  }
+
+  .english-teachers .english-teacher {
+    margin-top: 40px;
+  }
+
+  .english-teachers .english-teacher:first-child {
+    margin-top: 0;
+  }
+
+  .lessons-container .lesson:last-child {
+    padding-bottom: 0;
   }
 }
